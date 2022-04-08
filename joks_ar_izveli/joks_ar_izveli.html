@@ -8,18 +8,27 @@
 </select>
 devās uz fitnesa klubu,
 <br>
-uzkāpa uz velosipēda,
+uzkāpa uz 
+<a href="http://www.velo.lv">velosipēda,</a>
 <br>
 pēc kāda laika instruktors jautā:
 <br>
 – Kāpēc jūs neminat pedāļus?
 <br>
 – Es braucu lejā no 
-<select>
+<select onchange="izveletaisKalns()">
     <option>Kalna</option>
     <option>Gaiziņa</option>
     <option>Sirdskalna</option>
     <option>Liepukalna</option>
 </select>
+
+
+<script>
+    function izveletaisKalns()
+    {
+        alert(1)
+    }
+</script>
 
 
