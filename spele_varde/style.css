@@ -1,0 +1,104 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css?family=Skranji');
+
+
+body
+{
+	font-family: 'Skranji', cursive;
+}
+
+
+wrapper
+{
+	display:block;
+	width:400px;
+	height:400px;
+	background:#DC9D00;
+	position:absolute;
+	overflow:hidden;
+	top:50%;
+	left:50%;
+	margin-top:-200px;
+	margin-left:-200px;
+}
+
+car img
+{
+	width:100px;
+}
+
+frog img
+{
+	width:50px;
+}
+
+
+header
+{
+	font-size:20px;
+	background:black;
+	color:white;
+	text-align:center;
+}
+
+footer
+{
+	font-size:9px;
+	background:black;
+	color:white;
+	text-align:center;
+	position:absolute;
+	bottom:0px;
+	width:100%;
+}
+
+
+car
+{
+	display:block;
+	position:absolute;
+	width:100px;
+	height:60px;
+	animation-name:drive;
+	animation-duration:10s;
+	animation-iteration-count:infinite;
+	animation-direction:alternate;
+	animation-timing-function:linear;
+}
+
+
+#car1
+{
+	top:20px;
+	animation-duration:10s;
+}
+
+#car2
+{
+	top:120px;
+	animation-duration:5s;
+}
+
+
+#car3
+{
+	top:200px;
+	animation-duration:7s;
+}
+
+frog
+{
+	position:absolute;
+	display:block;
+	bottom:20px;
+	left:180px;
+}
+
+
+@keyframes drive
+{
+	from { left:-60px; }
+	to { left:400px; }
+}

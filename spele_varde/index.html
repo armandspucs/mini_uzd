@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+
+<link href="style.css" rel="stylesheet" />
+
+<script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.0-rc.2/jquery-ui.min.js"></script>
+</head>
+
+
+
+
+
+<body>
+
+	<wrapper>
+    	<header>
+        Dont`t kill the frog!!!
+        </header>
+        
+        
+        <game>
+        	<car id="car1">
+            <img src="car1.png" />
+            </car>
+            
+        	<car id="car2">
+            <img src="car2.png" />
+            </car>
+            
+        	<car id="car3">
+            <img src="car3.png" />
+            </car>
+            
+            <frog>
+            <img src="frog.png" />
+            </frog>
+            
+        </game>
+        
+        
+        <footer>
+        (c) 2018 SIA "Vārds Uzvārds"
+        </footer>
+    </wrapper>
+
+<popup style="width:300px; height:300px; background:red; display:block; text-align:center; color:rgba(255,128,130,1.00); position:absolute; top:50%; left:50%; margin-left:-150px; margin-top:-150px;">
+<h2 style="font-size:60px;">You lose!!!</h2>
+<span onclick="location.reload()" style="border:1px dotted white; cursor:pointer;">RESTART</span>
+</popup>
+
+
+<script>
+
+$('popup').hide();
+
+$('frog').draggable();
+
+
+setInterval(checkCollision, 100);
+
+
+function checkCollision()
+{
+
+
+	var car1collisionleft = ($('#car1').position().left) - ($('frog').position().left);
+	car1collisionleft = Math.abs(car1collisionleft);
+	//console.log(car1collisionleft);
+		
+	var car1collisiontop = ($('#car1').position().top) - ($('frog').position().top) ;
+	car1collisiontop = Math.abs(car1collisiontop);
+
+
+	if( car1collisionleft < 60 && car1collisiontop < 60 )
+	{
+		console.log('car1 hit');
+		$('popup').show();
+	}
+	///////////////////////////////////
+	///////////////////////////////////
+	///////////////////////////////////
+	///////////////////////////////////
+	///////////////////////////////////
+	var car2collisionleft = ($('#car2').position().left) - ($('frog').position().left);
+	car2collisionleft = Math.abs(car2collisionleft);
+	//console.log(car2collisionleft);
+		
+	var car2collisiontop = ($('#car2').position().top) - ($('frog').position().top) ;
+	car2collisiontop = Math.abs(car2collisiontop);
+
+
+	if( car2collisionleft < 60 && car2collisiontop < 60 )
+	{
+		console.log('car2 hit');
+		$('popup').show();
+
+	}
+	///////////////////////////////////
+	///////////////////////////////////
+	///////////////////////////////////
+	///////////////////////////////////
+	///////////////////////////////////	
+	var car3collisionleft = ($('#car3').position().left) - ($('frog').position().left);
+	car3collisionleft = Math.abs(car3collisionleft);
+	//console.log(car3collisionleft);
+		
+	var car3collisiontop = ($('#car3').position().top) - ($('frog').position().top) ;
+	car3collisiontop = Math.abs(car3collisiontop);
+
+
+	if( car3collisionleft < 60 && car3collisiontop < 60 )
+	{
+		console.log('car3 hit');
+		$('popup').show();
+
+	}
+	///////////////////////////////////
+	///////////////////////////////////
+	///////////////////////////////////
+	///////////////////////////////////
+	///////////////////////////////////		
+	
+	
+
+	
+}//end checkCollision()
+
+
+</script>
+
+
+</body>
+</html>
