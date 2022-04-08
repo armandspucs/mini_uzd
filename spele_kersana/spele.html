@@ -1,44 +1,36 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Untitled Document</title>
+
+
+<h3>Noķer, ja vari!</h3>
+	
+	
+
+<img id="varonis" src="bilde.jpg" width="100" onmouseover=" goaway() " />
+
+
+
 
 	<style>
-		#enemy
+		#varonis
 		{
 		position:absolute;
 		top:100px;
 		left:400px;
 		}
 	</style>
-	
-	
-	<script>
-		
-		function goaway()
-		{
-			
-			
-			var randomtop = Math.random()*500;
-			var randomleft = Math.random()*1000;
-			
-			document.getElementById('enemy').style.top=randomtop+'px';
-			document.getElementById('enemy').style.left=randomleft+'px';
-		}
-		
-	</script>
-	
-	
-</head>
 
+
+
+<script>
+		
+	function goaway()
+	{
+		
+		var randomtop = Math.random()*500;
+		var randomleft = Math.random()*1000;
+		
+		document.querySelector('#varonis').style.top=randomtop+'px';
+		document.querySelector('#varonis').style.left=randomleft+'px';
+	}
 	
-<body>
+</script>
 	
-	<img id="enemy" src="bilde.jpg" width="100" onmouseover=" goaway() " />
-	
-</body>
-	
-	
-	
-</html>
