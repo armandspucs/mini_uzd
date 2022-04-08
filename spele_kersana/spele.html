@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+
+	<style>
+		#enemy
+		{
+		position:absolute;
+		top:100px;
+		left:400px;
+		}
+	</style>
+	
+	
+	<script>
+		
+		function goaway()
+		{
+			
+			
+			var randomtop = Math.random()*500;
+			var randomleft = Math.random()*1000;
+			
+			document.getElementById('enemy').style.top=randomtop+'px';
+			document.getElementById('enemy').style.left=randomleft+'px';
+		}
+		
+	</script>
+	
+	
+</head>
+
+	
+<body>
+	
+	<img id="enemy" src="bilde.jpg" width="100" onmouseover=" goaway() " />
+	
+</body>
+	
+	
+	
+</html>
