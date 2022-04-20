@@ -15,6 +15,7 @@ const vardi1 = ['spalvainais','karstais','papedim','mazais'];
 const vardi2 = ['lacis','vista','ruksis','sunis','sesks'];
 const vardi3 = ['lien','klukst','lec','lido','skrien'];
 
+
 //let parole = vardi1[0];
 //let parole = vardi1[0]+vardi2[0]+vardi3[0];
 
@@ -27,14 +28,10 @@ function rand(masivaNosaukums)
 
 
 
-function veidotParoli()
-{
-  let random1 = rand(vardi1);
-  let random2 = rand(vardi2);
-  let random3 = rand(vardi2);
 
+ 
   
-}
+
 
 
 
@@ -42,9 +39,9 @@ for (i = 0; i < variantuSkaits; i++)
 {
   //console.log(i);
   //let random1 = Math.floor( Math.random() * vardi1.length );
-  //let random1 = rand(vardi1);
-  //let random2 = rand(vardi2);
-  //let random3 = rand(vardi2);
+  let random1 = rand(vardi1);
+  let random2 = rand(vardi2);
+  let random3 = rand(vardi2);
   //
   //let parole = vardi1[random1];
   //
