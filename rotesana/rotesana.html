@@ -1,0 +1,33 @@
+<div class="ola"> <div class="dzeltenums"></div>
+</div>
+
+<style>
+.ola {
+	background: grey;
+	width: 80px;
+	height: 110px;
+	border-radius: 50% / 60% 60% 40% 40%;
+    position: absolute;
+    left:100px;
+}
+.dzeltenums	{
+	position:absolute;
+	top:35px;
+	left:15px;
+	background: yellow;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%; }
+</style>
+
+<script>
+rotation = 45;
+
+function ripinat()
+{
+	document.querySelector('.ola').style.transform = "rotate("+rotation+"deg)";
+	rotation++;
+}
+
+setInterval( ripinat, 50)
+</script>
