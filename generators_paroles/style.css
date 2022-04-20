@@ -1,0 +1,39 @@
+.wrapper
+{
+  display: block;
+  border:1px solid grey;
+  background: whitesmoke;
+  margin-left:auto;
+  margin-right:auto;
+  width: 50%;
+  padding:10px;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+
+input
+{
+  width:60px;
+}
+
+input.cipars
+{
+  width:20px;
+}
+
+h5
+{
+  margin-bottom: 5px;
+}
+
+table.paroles
+{
+  display: inline-block;
+}
+
+table.paroles td
+{
+  border-bottom:1px solid gray;
+  text-align: left;
+}
